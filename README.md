@@ -54,9 +54,6 @@ If you encounter any issues, please refer to the official Flutter documentation 
 License
 This project is licensed under the MIT License.
 
-markdown
-Copy code
-
 ### Detailed Explanation for README Sections:
 
 1. **Features:** Lists the main functionalities of the app.
