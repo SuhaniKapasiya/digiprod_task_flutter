@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -37,8 +38,33 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(),
-      // This trailing comma makes auto-formatting nicer for build methods.
+      body: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30.0),
+              color: Colors.grey[200],
+            ),
+            child: Row(
+              children: [
+                Icon(Icons.search, color: Colors.grey),
+                SizedBox(width: 16.0),
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Type to search',
+                      border: InputBorder.none,
+                      hintStyle: TextStyle(color: Colors.grey),
+                    ),
+                  ),
+                ),
+                Icon(Icons.mic, color: Colors.grey),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
