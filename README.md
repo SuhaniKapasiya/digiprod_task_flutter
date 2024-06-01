@@ -19,7 +19,7 @@ This Flutter project demonstrates a simple implementation of a home page inspire
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/my_app.git
+   git clone [https://github.com/yourusername/my_app.git](https://github.com/SuhaniKapasiya/digiprod_task_flutter)
    cd my_app
 Install dependencies:
 
