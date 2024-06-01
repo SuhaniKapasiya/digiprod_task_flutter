@@ -24,6 +24,7 @@ This Flutter project demonstrates a simple implementation of a home page inspire
 Install dependencies:
 
 
+
 flutter pub get
 Set up Appwrite:
 
@@ -31,7 +32,7 @@ Follow the instructions here to set up Appwrite for your project.
 Ensure you have an Appwrite server running and note the endpoint and project ID.
 Configure Appwrite in Flutter:
 
-Create a .env file in the root of your project and add your Appwrite endpoint and project ID:
+Create a .env file in the root of your project and add your Appwrite endpoint and project ID:plaintext
 
 
 APPWRITE_ENDPOINT=https://your-appwrite-endpoint
@@ -43,12 +44,15 @@ flutter run
 
 Project Structure
 lib/main.dart: Main entry point of the application.
-lib/home_page.dart: Home page implementation.
+
 
 Appwrite Structure
 Collection: products
 Document: { id }
 Fields: name, description, image
+
+APK
+You can download the APK for this project here.
 
 Troubleshooting
 If you encounter any issues, please refer to the official Flutter documentation here or the Appwrite setup guide here.
@@ -56,4 +60,9 @@ If you encounter any issues, please refer to the official Flutter documentation 
 License
 This project is licensed under the MIT License.
 
-This README file provides clear instructions for setting up and running your Flutter applica
+
+This README file now includes the link to the APK for your project, along with all the other necessary details for setting up and running the Flutter application with Appwrite integration.
+
+
+
+
