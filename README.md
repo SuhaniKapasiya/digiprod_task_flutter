@@ -1,6 +1,4 @@
-# digiprod_task
-
-A new Flutter project.
+# Digiprod Task Flutter
 
 This Flutter project demonstrates a simple implementation of a home page inspired by the Myntra app design. It uses Appwrite for the backend.
 
@@ -14,6 +12,8 @@ This Flutter project demonstrates a simple implementation of a home page inspire
 - Flutter SDK
 - Android Studio
 - Xcode (for iOS)
+- Appwrite Server
+- Firebase Account
 
 ### Installation
 
@@ -21,48 +21,49 @@ This Flutter project demonstrates a simple implementation of a home page inspire
    ```bash
    git clone https://github.com/SuhaniKapasiya/digiprod_task_flutter.git
    cd digiprod_task_flutter
+
 Install dependencies:
 
-
-
 flutter pub get
+
 Set up Appwrite:
 
 Follow the instructions here to set up Appwrite for your project.
 Ensure you have an Appwrite server running and note the endpoint and project ID.
-Configure Appwrite in Flutter:
-
-Create a .env file in the root of your project and add your Appwrite endpoint and project ID:plaintext
-
+Create a .env file in the root of your project and add your Appwrite endpoint and project ID:
 
 APPWRITE_ENDPOINT=https://your-appwrite-endpoint
 APPWRITE_PROJECT_ID=your-project-id
-Use the flutter_dotenv package to load these variables into your Flutter app.
 
-Run the app:
-flutter run
+Set up Firebase:
+
+Go to the Firebase Console.
+Create a new project or use an existing one.
+For Android:
+Download google-services.json and place it in the android/app directory.
+Add the classpath to the [project]/android/build.gradle file
+
+classpath 'com.google.gms:google-services:4.3.3'
+
+
+Apply the plugin to the [project]/android/app/build.gradle file
+
+apply plugin: 'com.google.gms.google-services'
+
+Run the app:- flutter run
+
 
 Project Structure
 lib/main.dart: Main entry point of the application.
-
-
 Appwrite Structure
 Collection: products
 Document: { id }
 Fields: name, description, image
-
 APK
-You can download the APK for this project here : https://drive.google.com/file/d/17h7z1GCufh3GwJaF2Inx0WaoJUALQjo1/view
+You can download the APK for this project here.
 
 Troubleshooting
 If you encounter any issues, please refer to the official Flutter documentation here or the Appwrite setup guide here.
 
 License
 This project is licensed under the MIT License.
-
-
-This README file now includes the link to the APK for your project, along with all the other necessary details for setting up and running the Flutter application with Appwrite integration.
-
-
-
-
